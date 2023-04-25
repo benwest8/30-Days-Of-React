@@ -14,7 +14,7 @@ console.log('Last Element', lastElement)
 const mixedDataTypes = [9, true, 7.14, '4/11/23', {country: 'Canada', city: 'Alberta', }, 8000]
 console.log('Mixed Data Types Length: ', mixedDataTypes.length)
 
-const itCompanies = ['Facebook', 'Google', 'Apple', 'IBM', 'Oracle', 'Amazon']
+let itCompanies = ['Facebook', 'Google', 'Apple', 'IBM', 'Oracle', 'Amazon']
 console.log('IT COMPANIES', itCompanies)
 console.log(itCompanies.length)
 let firstCompany = itCompanies[0]
@@ -68,4 +68,17 @@ console.log('Slice last 3: ', itCompanies.slice(3,itCompanies.length))
 const middleElementOfCompanies = Math.floor(itCompanies.length / 2)
 console.log('Slice Middle: ', itCompanies.slice(middleElementOfCompanies, middleElementOfCompanies + 1))
 
-// Finish 19 - 23 - Removals
+// Finish 20 - 23 - Removals
+const reInitializeArray = ['Facebook', 'Google', 'Apple', 'IBM', 'Oracle', 'Amazon']
+itCompanies = ['Facebook', 'Google', 'Apple', 'IBM', 'Oracle', 'Amazon']
+console.log('Reinitialized Array For Each of Following Problems to: ', reInitializeArray)
+const removeFirst = itCompanies.shift()
+console.log('Remove first Element: ', itCompanies)
+itCompanies = ['Facebook', 'Google', 'Apple', 'IBM', 'Oracle', 'Amazon']
+const middleCompanyToRemove = Math.floor(itCompanies.length /2)
+itCompanies.splice(middleCompanyToRemove, 1)
+console.log('Remove Middle Company: ', itCompanies)
+itCompanies = ['Facebook', 'Google', 'Apple', 'IBM', 'Oracle', 'Amazon']
+const removeLast = itCompanies.pop()
+console.log('Remove Last Element: ', itCompanies)
+console.log('Remove All: ', itCompanies.splice())
